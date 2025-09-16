@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativo Amil One</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f3ff, #ede9fe);
+        }
+        .card-header-gradient {
+            background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+        }
+        .highlight-card {
+            border: 2px solid #7c3aed;
+            transform: scale(1.02);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+        /* Estilos para o Modal */
+        .modal-backdrop {
+            transition: opacity 0.3s ease;
+        }
+        .modal-content {
+            transition: transform 0.3s ease;
+        }
+        .loader {
+            border-top-color: #6d28d9;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="gradient-bg antialiased text-slate-700">
+
+    <div class="container mx-auto p-4 sm:p-6 lg:p-12">
+
+        <!-- Header -->
+        <header class="text-center mb-12">
+            <img src="https://doc.vhseguros.com.br/files/public_html/LogoVH/VAN-HELDEN-cor.png" alt="Logo VH Seguros" class="h-12 mx-auto mb-6">
+            <h1 class="text-4xl sm:text-5xl font-bold text-slate-800">Análise Comparativa</h1>
+            <h2 class="text-2xl sm:text-3xl font-light text-violet-700 mt-2">Planos Amil One</h2>
+        </header>
+
+        <!-- Comparison Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+
+            <!-- Card: S2500 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full flex flex-col transition-transform duration-300 hover:scale-105">
+                <div class="p-6 text-center">
+                    <img src="https://doc.vhseguros.com.br/files/public_html/LogoOperadora/amil.png" alt="Logo Amil" class="h-8 mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold text-slate-800">Amil One S2500</h3>
+                    <p class="text-violet-600 font-medium mt-1">Equilíbrio Ideal</p>
+                </div>
+                <div class="p-6 border-t border-slate-200">
+                    <p class="text-slate-600 text-center text-sm font-semibold mb-2">Mensalidade (a partir de)</p>
+                    <p class="text-4xl font-bold text-center text-slate-800">R$ 1.956<span class="text-2xl font-medium">,86</span></p>
+                    <div class="mt-4 text-xs text-slate-600">
+                        <p class="font-bold text-center mb-2">Opções de Reembolso:</p>
+                        <ul class="space-y-1 text-center">
+                            <li><strong>R1:</strong> R$ 432,00 (Mensal: R$ 1.956,86)</li>
+                            <li><strong>R2:</strong> R$ 600,00 (Mensal: R$ 2.281,85)</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="p-6 space-y-4 text-sm flex-grow">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span><strong class="font-medium">Reembolso para Terapias:</strong> Inclui psicologia, fonoaudiologia, e mais.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span><strong class="font-medium">Hospitais de excelência:</strong> Einstein, Sírio, Vila Nova Star, BP, Pro Matre, Sabará e outros.</span>
+                    </li>
+                     <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Telemedicina, transplantes adicionais e escleroterapia (12 sessões/ano).</span>
+                    </li>
+                </ul>
+                <div class="p-6 mt-auto">
+                    <div class="bg-violet-100 text-violet-800 text-center p-3 rounded-lg text-sm">
+                        <strong class="font-semibold">Melhor custo-benefício</strong> para quem busca rede premium e terapias.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: S6500 Black (Highlight) -->
+            <div class="bg-white rounded-xl overflow-hidden h-full flex flex-col highlight-card z-10">
+                <div class="card-header-gradient p-6 text-center text-white">
+                    <img src="https://doc.vhseguros.com.br/files/public_html/LogoOperadora/amil.png" alt="Logo Amil" class="h-8 mx-auto mb-4 filter brightness-0 invert">
+                    <h3 class="text-2xl font-bold">Amil One S6500 Black</h3>
+                    <p class="opacity-80 font-light mt-1">Cobertura Premium Completa</p>
+                </div>
+                <div class="p-6 border-t border-slate-200">
+                    <p class="text-slate-600 text-center text-sm font-semibold mb-2">Mensalidade (a partir de)</p>
+                    <p class="text-4xl font-bold text-center text-slate-800">R$ 2.492<span class="text-2xl font-medium">,55</span></p>
+                    <div class="mt-4 text-xs text-slate-600">
+                        <p class="font-bold text-center mb-2">Opções de Reembolso:</p>
+                        <ul class="space-y-1 text-center">
+                            <li><strong>R1:</strong> R$ 600,00 (Mensal: R$ 2.492,55)</li>
+                            <li><strong>R2:</strong> R$ 800,00 (Mensal: R$ 2.972,54)</li>
+                            <li><strong>R3:</strong> R$ 1.040,00 (Mensal: R$ 3.637,70)</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="p-6 space-y-4 text-sm flex-grow">
+                    <li class="flex items-start">
+                         <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span><strong class="font-medium">Reembolso para Terapias:</strong> Inclui os maiores valores para psicologia, fono, etc.</span>
+                    </li>
+                    <li class="flex items-start">
+                         <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span><strong class="font-medium">Rede premium completa:</strong> Albert Einstein, Sírio-Libanês e toda Rede Star.</span>
+                    </li>
+                    <li class="flex items-start">
+                         <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span><strong class="font-medium">Laboratórios:</strong> Einstein, Fleury, Alta Excelência.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span><strong class="font-medium">Concierge Exclusivo:</strong> Atendimento dedicado para suas demandas.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span><strong class="font-medium">Check-up Anual:</strong> Cobertura para uma rotina mais saudável.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span><strong class="font-medium">Escleroterapia:</strong> 24 sessões por ano para tratamento de vasos.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span><strong class="font-medium">Embaixadas Amil One:</strong> Atendimento exclusivo em hospitais de ponta.</span>
+                    </li>
+                </ul>
+                 <div class="p-6 mt-auto">
+                    <div class="bg-violet-800 text-white text-center p-3 rounded-lg text-sm">
+                        <strong class="font-semibold">A escolha definitiva</strong> para quem busca o melhor.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card: Black (Linha Nova) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full flex flex-col transition-transform duration-300 hover:scale-105">
+                <div class="p-6 text-center">
+                    <img src="https://doc.vhseguros.com.br/files/public_html/LogoOperadora/amil.png" alt="Logo Amil" class="h-8 mx-auto mb-4">
+                    <h3 class="text-2xl font-semibold text-slate-800">Amil Black (Linha Nova)</h3>
+                    <p class="text-violet-600 font-medium mt-1">Opção Acessível</p>
+                </div>
+                <div class="p-6 border-t border-slate-200">
+                    <p class="text-slate-600 text-center text-sm font-semibold mb-2">Mensalidade (a partir de)</p>
+                    <p class="text-4xl font-bold text-center text-slate-800">R$ 1.749<span class="text-2xl font-medium">,54</span></p>
+                     <div class="mt-4 text-xs text-slate-600">
+                        <p class="font-bold text-center mb-2">Opções de Reembolso:</p>
+                        <ul class="space-y-1 text-center">
+                            <li><strong>R1:</strong> R$ 432,00 (Mensal: R$ 1.749,54)</li>
+                            <li><strong>R2:</strong> R$ 600,00 (Mensal: R$ 2.041,60)</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="p-6 space-y-4 text-sm flex-grow">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span><strong class="font-medium">Hospitais de Destaque:</strong> Einstein (Goiânia), Sírio-Libanês (SP e DF), Samaritano (SP e RJ).</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        <span>Coleta domiciliar, vacinas, escleroterapia e transplantes (extra rol).</span>
+                    </li>
+                    <li class="flex items-start">
+                         <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                        <span><strong class="font-medium">Sem Rede D’Or.</strong></span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 text-red-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path></svg>
+                        <span>Reembolso para terapias <strong class="font-medium">não incluso.</strong></span>
+                    </li>
+                </ul>
+                 <div class="p-6 mt-auto">
+                    <div class="bg-violet-100 text-violet-800 text-center p-3 rounded-lg text-sm">
+                        <strong class="font-semibold">Foco em custo</strong>, com algumas restrições de rede e reembolso.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Strategic Summary -->
+        <div class="mt-16">
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-2xl font-bold text-slate-800 text-center mb-6">Resumo Estratégico e Recomendações</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center mb-8">
+                    
+                    <div class="border-t-4 border-violet-500 pt-4">
+                        <h4 class="font-semibold text-lg text-violet-700">Black (Linha Nova)</h4>
+                        <p class="text-slate-600 mt-2 text-sm">Opção <strong class="font-medium">mais econômica</strong>. Ideal para quem não tem a Rede D’Or como prioridade e não utiliza terapias com reembolso.</p>
+                    </div>
+
+                    <div class="border-t-4 border-violet-500 pt-4">
+                        <h4 class="font-semibold text-lg text-violet-700">S2500</h4>
+                        <p class="text-slate-600 mt-2 text-sm">Para quem deseja uma <strong class="font-medium">ampla rede premium e reembolso para terapias</strong> com um custo equilibrado. É o ponto de equilíbrio perfeito.</p>
+                    </div>
+
+                    <div class="border-t-4 border-violet-500 pt-4">
+                        <h4 class="font-semibold text-lg text-violet-700">S6500 Black</h4>
+                        <p class="text-slate-600 mt-2 text-sm">Indicado para quem busca o <strong class="font-medium">melhor e mais completo plano</strong>, com acesso total, exclusividades e o maior reembolso do mercado.</p>
+                    </div>
+
+                </div>
+                 <!-- Gemini Feature Button -->
+                <div class="text-center">
+                    <button id="openModalBtn" class="bg-gradient-to-r from-violet-600 to-indigo-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300">
+                        ✨ Obter Recomendação Inteligente
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <!-- Gemini Recommendation Modal -->
+    <div id="recommendationModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 modal-backdrop opacity-0 pointer-events-none">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-md m-4 p-6 sm:p-8 modal-content transform scale-95">
+            <div class="flex justify-between items-center mb-6">
+                <h2 class="text-2xl font-bold text-slate-800">Assistente de Decisão</h2>
+                <button id="closeModalBtn" class="text-slate-400 hover:text-slate-600">&times;</button>
+            </div>
+            
+            <div id="modal-initial-state">
+                 <p class="text-slate-600 mb-6">Para ajudar na escolha, qual destes fatores é o mais importante para você?</p>
+                <div class="space-y-4">
+                    <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:bg-violet-50 has-[:checked]:bg-violet-100 has-[:checked]:border-violet-400">
+                        <input type="radio" name="priority" value="o menor preço possível" class="form-radio h-5 w-5 text-violet-600">
+                        <span class="ml-4 text-slate-700">Menor mensalidade</span>
+                    </label>
+                    <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:bg-violet-50 has-[:checked]:bg-violet-100 has-[:checked]:border-violet-400">
+                        <input type="radio" name="priority" value="a maior e melhor rede de hospitais e laboratórios" class="form-radio h-5 w-5 text-violet-600">
+                        <span class="ml-4 text-slate-700">A melhor e mais ampla rede</span>
+                    </label>
+                     <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:bg-violet-50 has-[:checked]:bg-violet-100 has-[:checked]:border-violet-400">
+                        <input type="radio" name="priority" value="o maior valor de reembolso para consultas e terapias" class="form-radio h-5 w-5 text-violet-600">
+                        <span class="ml-4 text-slate-700">Maior valor de reembolso</span>
+                    </label>
+                     <label class="flex items-center p-4 border rounded-lg cursor-pointer hover:bg-violet-50 has-[:checked]:bg-violet-100 has-[:checked]:border-violet-400">
+                        <input type="radio" name="priority" value="um bom equilíbrio entre preço, rede e reembolso para terapias" class="form-radio h-5 w-5 text-violet-600">
+                        <span class="ml-4 text-slate-700">Equilíbrio custo-benefício</span>
+                    </label>
+                </div>
+                 <button id="getRecommendationBtn" class="mt-8 w-full bg-violet-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-violet-700 transition-colors duration-300 disabled:bg-slate-300" disabled>
+                    Gerar Recomendação
+                </button>
+            </div>
+
+            <div id="modal-loading-state" class="hidden text-center py-8">
+                 <div class="loader w-12 h-12 rounded-full border-4 border-slate-200 mx-auto"></div>
+                 <p class="mt-4 text-slate-600">Analisando a melhor opção para você...</p>
+            </div>
+            
+            <div id="modal-result-state" class="hidden">
+                <h3 class="font-bold text-lg text-slate-800 mb-2">Recomendação Personalizada:</h3>
+                <div id="recommendation-text" class="bg-violet-50 p-4 rounded-lg text-slate-700 border border-violet-200"></div>
+                <button id="resetModalBtn" class="mt-6 w-full bg-slate-200 text-slate-700 font-bold py-2 px-4 rounded-lg hover:bg-slate-300 transition-colors">
+                    Fazer outra análise
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+<script>
+    // Modal elements
+    const modal = document.getElementById('recommendationModal');
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const getRecommendationBtn = document.getElementById('getRecommendationBtn');
+    const resetModalBtn = document.getElementById('resetModalBtn');
+    const priorityRadios = document.querySelectorAll('input[name="priority"]');
+
+    // Modal state containers
+    const initialState = document.getElementById('modal-initial-state');
+    const loadingState = document.getElementById('modal-loading-state');
+    const resultState = document.getElementById('modal-result-state');
+    const recommendationText = document.getElementById('recommendation-text');
+
+    // Function to switch modal views
+    const showState = (state) => {
+        initialState.classList.add('hidden');
+        loadingState.classList.add('hidden');
+        resultState.classList.add('hidden');
+        state.classList.remove('hidden');
+    };
+
+    // Open/Close modal logic
+    openModalBtn.addEventListener('click', () => {
+        modal.classList.remove('opacity-0', 'pointer-events-none');
+        modal.querySelector('.modal-content').classList.remove('scale-95');
+        showState(initialState);
+    });
+
+    const closeModal = () => {
+        modal.classList.add('opacity-0');
+        modal.querySelector('.modal-content').classList.add('scale-95');
+        setTimeout(() => modal.classList.add('pointer-events-none'), 300);
+    };
+
+    closeModalBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+
+    // Enable button when a radio is selected
+    priorityRadios.forEach(radio => {
+        radio.addEventListener('change', () => {
+            getRecommendationBtn.disabled = false;
+        });
+    });
+
+    // Reset modal to initial state
+    resetModalBtn.addEventListener('click', () => {
+        priorityRadios.forEach(radio => radio.checked = false);
+        getRecommendationBtn.disabled = true;
+        showState(initialState);
+    });
+
+    // --- Gemini API Call ---
+    getRecommendationBtn.addEventListener('click', async () => {
+        const selectedPriority = document.querySelector('input[name="priority"]:checked').value;
+        if (!selectedPriority) return;
+
+        showState(loadingState);
+
+        const apiKey = ""; // Canvas will provide the key
+        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+        const systemPrompt = "Você é um consultor especialista em planos de saúde. Sua tarefa é analisar as prioridades de um cliente e recomendar o melhor plano de saúde entre três opções da Amil One, explicando o motivo de forma clara e concisa em um único parágrafo.";
+        
+        const userQuery = `
+            Um cliente informou que sua principal prioridade é: '${selectedPriority}'. 
+            Com base nisso e nos dados dos planos abaixo, qual você recomendaria e por quê? Responda em um parágrafo amigável, começando com o nome do plano recomendado em negrito.
+
+            ### Dados dos Planos Atuais:
+
+            **Plano 1: Amil One S6500 Black**
+            - Opções de Preço/Reembolso:
+                - R1: R$ 2.492,55 / R$ 600,00
+                - R2: R$ 2.972,54 / R$ 800,00
+                - R3: R$ 3.637,70 / R$ 1.040,00 (o maior reembolso)
+            - Destaques: Rede premium mais completa (Einstein, Sírio, Rede Star), laboratórios de ponta, concierge e check-up.
+            - Perfil: Ideal para quem busca a melhor e mais completa cobertura, com os maiores valores de reembolso do mercado.
+
+            **Plano 2: Amil One S2500**
+            - Opções de Preço/Reembolso:
+                - R1: R$ 1.956,86 / R$ 432,00
+                - R2: R$ 2.281,85 / R$ 600,00
+            - Destaques: Excelente equilíbrio, rede premium ampla (inclui Einstein, Sírio e D'Or), e importante: cobre terapias em ambas as opções de reembolso.
+            - Perfil: Melhor custo-benefício para quem quer rede de ponta e reembolso para terapias.
+
+            **Plano 3: Amil Black (Linha Nova)**
+            - Opções de Preço/Reembolso:
+                - R1: R$ 1.749,54 / R$ 432,00
+                - R2: R$ 2.041,60 / R$ 600,00
+            - Destaques: O plano com o menor custo inicial. Boa rede (Einstein, Sírio), mas sem Rede D’Or.
+            - Ponto de Atenção: NÃO possui reembolso para terapias (psicologia, fono, etc).
+            - Perfil: Opção mais barata para quem não precisa da Rede D’Or e não utiliza terapias com reembolso.
+        `;
+
+        const payload = {
+            contents: [{ parts: [{ text: userQuery }] }],
+            systemInstruction: {
+                parts: [{ text: systemPrompt }]
+            },
+        };
+
+        try {
+            // Simple exponential backoff implementation
+            let response;
+            let retries = 3;
+            let delay = 1000;
+            while (retries > 0) {
+                response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                if (response.ok) break;
+                retries--;
+                await new Promise(res => setTimeout(res, delay));
+                delay *= 2;
+            }
+
+            if (!response.ok) {
+                throw new Error('API call failed after retries.');
+            }
+            
+            const result = await response.json();
+            const text = result.candidates?.[0]?.content?.parts?.[0]?.text;
+
+            if (text) {
+                // Sanitize and format the text
+                recommendationText.innerHTML = text
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') // Bold
+                    .replace(/\n/g, '<br>'); // New lines
+            } else {
+                recommendationText.textContent = "Não foi possível gerar uma recomendação. Por favor, tente novamente.";
+            }
+
+        } catch (error) {
+            console.error('Error calling Gemini API:', error);
+            recommendationText.textContent = "Ocorreu um erro ao buscar sua recomendação. Verifique sua conexão e tente novamente.";
+        }
+        
+        showState(resultState);
+    });
+</script>
+
+</body>
+</html>
+
+
+
